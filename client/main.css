@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&display=swap');
+
+body {
+    background-color: #dfe6ff;
+}
+
+h1 {    
+    margin-top: 50px;
+    margin-left: 70px;
+    font-family: Fredoka One;
+    text-transform: uppercase;
+    z-index: 2;
+    position: relative;
+}
+
+.todo-list-container {
+    font-family:Fredoka One;
+    min-height: 80vh;
+    max-width: 800px;
+    margin: 40px;
+    padding: 30px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.todo-form {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-form>div>input:focus {
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.todo-form>small {
+    margin-left: -160px;
+}
+
+.new-todo-item {
+    font-family: Fredoka One;
+    border: none;
+    background-color: #dfe6ff;
+    border-bottom: 2px solid #757575;
+    height: 40px;
+    width: 200px;
+}
+
+.button {
+    border: none;
+    background-color: #dfe6ff;
+}
+
+.fa-square-plus {
+    color: #5580f2;
+    cursor: pointer;
+}
+
+.fa-square-plus:hover {
+    color: #476ed8;
+}
+
+.todo-list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 3px;
+}
+
+.todo-list__item__text {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.todo-list__item__icons {
+    margin-right: 8px;
+}
+
+.fa-square-check {
+    color: #41c49a;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.fa-square-check:hover {
+    color: #36a582;
+}
+
+.fa-square-xmark {
+    color: #fc756a;
+    cursor: pointer;
+}
+
+.fa-square-xmark:hover {
+    color: #e4665a;
+}
+
+.side-image {
+    width: 30%;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 0;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #929292;
+}
+
+
+
+
+
