@@ -5,8 +5,9 @@ import ApiService from "./helpers/api-service.js";
 const todoList = document.querySelector('.js-todo-list');
 
 const displayTodoItem = ({
-  completed = false,
-  title
+  completed,
+  title,
+  id,
 }) => {
   const todoItem = document.createElement('div');
   todoItem.className = 'todo-list__item';
@@ -21,11 +22,20 @@ const displayTodoItem = ({
   
   const checkmarkIcon = document.createElement('i');
   checkmarkIcon.className = 'fa-solid fa-square-check fa-2x';
-  checkmarkIcon.addEventListener('click', () => console.log('Paspausta check'));
+  checkmarkIcon.addEventListener('click', async () => {
+    const updatedTodo = await ApiService.updateTodo({
+      id,
+      completed: !todoItemText.classList.contains('checked'),
+    });
+    todoItemText.classList.toggle('checked')
+  });
 
   const deleteIcon = document.createElement('i');
   deleteIcon.className = 'fa-solid fa-square-xmark fa-2x';
-  deleteIcon.addEventListener('click', () => console.log('Paspausta delete'));
+  deleteIcon.addEventListener('click', async () => {
+    await ApiService.deleteTodo(id);
+    todoItem.remove();
+  });
 
   todoItem.append(
     todoItemText,
