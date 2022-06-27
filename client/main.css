@@ -108,6 +108,11 @@ h1 {
 .fa-rotate-left {
     color: #c53431;
     margin-right: 8px;
+    cursor: pointer;
+}
+
+.fa-rotate-left:hover {
+    color: #933230;
 }
 
 .side-image {

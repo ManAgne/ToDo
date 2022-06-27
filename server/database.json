@@ -2,7 +2,7 @@
   "todos": [
     {
       "title": "Finish that book",
-      "completed": true,
+      "completed": false,
       "id": 1
     },
     {
@@ -21,9 +21,14 @@
       "id": 4
     },
     {
-      "title": "Water my only plant - thyme named Rozaura",
+      "title": "Water my only plant - thyme",
       "completed": false,
       "id": 5
+    },
+    {
+      "title": "Get some vitamin D",
+      "completed": false,
+      "id": 6
     }
   ]
 }
