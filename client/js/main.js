@@ -28,6 +28,7 @@ const displayTodoItem = ({
       completed: !todoItemText.classList.contains('checked'),
     });
     todoItemText.classList.toggle('checked')
+    todoItemIcons.classList.toggle('checkedIcon')
   });
 
   const deleteIcon = document.createElement('i');
@@ -47,14 +48,14 @@ const displayTodoItem = ({
     deleteIcon
   )
 
-  todoList.insertAdjacentElement('afterBegin', todoItem); // pridėti į priekį
-  ///// todoList.appendChild(todoItem) // pridėti į galą
+  // todoList.insertAdjacentElement('afterBegin', todoItem); // pridėti į priekį
+  todoList.appendChild(todoItem) // pridėti į galą
 }
 
 const formAddTodo = new FormComponent(
-  '.js-add-todo-form', /* selector */
-  todoValidator, /* formatErrors */
-  // OnSuccess handler
+  '.js-add-todo-form',
+  todoValidator,
+
   async ({ title }) => {
     const createdTodo = await ApiService.createTodo({ title });
     displayTodoItem(createdTodo);

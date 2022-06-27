@@ -5,19 +5,19 @@ body {
 }
 
 h1 {    
-    margin-top: 50px;
-    margin-left: 70px;
+    margin: 50px 10px;
     font-family: Fredoka One;
+    text-align: center;
     text-transform: uppercase;
-    z-index: 2;
+    font-size: 20px;
     position: relative;
+    z-index: 2;
 }
 
 .todo-list-container {
     font-family:Fredoka One;
     min-height: 80vh;
     max-width: 800px;
-    margin: 40px;
     padding: 30px;
     text-align: center;
     z-index: 1;
@@ -25,18 +25,22 @@ h1 {
 }
 
 .todo-form {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
+}
+
+.todo-form>div {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+}
+
+.todo-form>div>input {
+    background-color: transparent;
 }
 
 .todo-form>div>input:focus {
     border-bottom: 2px solid black;
     outline: none;
-}
-
-.todo-form>small {
-    margin-left: -160px;
 }
 
 .new-todo-item {
@@ -45,7 +49,7 @@ h1 {
     background-color: #dfe6ff;
     border-bottom: 2px solid #757575;
     height: 40px;
-    width: 200px;
+    width: 150px;
 }
 
 .button {
@@ -79,6 +83,7 @@ h1 {
 
 .todo-list__item__icons {
     margin-right: 8px;
+    flex-wrap: nowrap;
 }
 
 .fa-square-check {
@@ -101,9 +106,9 @@ h1 {
 }
 
 .side-image {
-    width: 30%;
+    width: 200px;
     position: absolute;
-    top: 50px;
+    top: 100px;
     right: 20px;
     z-index: 0;
 }
@@ -111,6 +116,10 @@ h1 {
 .checked {
     text-decoration: line-through;
     color: #929292;
+}
+
+.checkedIcon {
+    color: grey;
 }
 
 
