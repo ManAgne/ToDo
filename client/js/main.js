@@ -27,8 +27,17 @@ const displayTodoItem = ({
       id,
       completed: !todoItemText.classList.contains('checked'),
     });
-    todoItemText.classList.toggle('checked')
-    todoItemIcons.classList.toggle('checkedIcon')
+    todoItemText.classList.add('checked')
+  });
+
+  const undoIcon = document.createElement('i');
+  undoIcon.className = 'fa-solid fa-rotate-left fa-2x';
+  undoIcon.addEventListener('click', async () => {
+    const updatedTodo = await ApiService.updateTodo({
+      id,
+      completed: !todoItemText.classList.contains('checked'),
+    });
+    todoItemText.classList.remove('checked')
   });
 
   const deleteIcon = document.createElement('i');
@@ -44,9 +53,18 @@ const displayTodoItem = ({
   );
 
   todoItemIcons.append(
+    undoIcon,
     checkmarkIcon,
     deleteIcon
   )
+
+  if (todoItemText.classList.contains('checked')){
+    checkmarkIcon.classList.add('display-none')
+    undoIcon.classList.remove('display-none')
+  } else {
+    checkmarkIcon.classList.remove('display-none')
+    undoIcon.classList.add('display-none')
+  }
 
   // todoList.insertAdjacentElement('afterBegin', todoItem); // pridėti į priekį
   todoList.appendChild(todoItem) // pridėti į galą

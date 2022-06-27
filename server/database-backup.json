@@ -1,49 +1,24 @@
 {
   "todos": [
     {
-      "id": "1",
-      "title": "Something",
-      "completed": false
-    },
-    {
-      "id": "2",
-      "title": "Something else",
-      "completed": false
-    },
-    {
-      "id": "3",
-      "title": "Another thing",
-      "completed": false
-    },
-    {
-      "title": "Something I was asked to, but don't want to",
+      "title": "Finish that book",
       "completed": false,
-      "id": "47XRb19"
+      "id": 1
     },
     {
-      "title": "Relax",
+      "title": "Watch a movie I was recommended",
       "completed": false,
-      "id": "RjDPKtn"
+      "id": 2
     },
     {
-      "title": "Watch some videos on youtube",
+      "title": "Go for a mental health walk",
       "completed": false,
-      "id": "vE7zCO_"
+      "id": 3
     },
     {
-      "title": "Ok",
+      "title": "Cook mofongo",
       "completed": false,
-      "id": "Z3cehU9"
-    },
-    {
-      "title": "zdsbs",
-      "completed": false,
-      "id": "IuXtPzN"
-    },
-    {
-      "title": "afegs",
-      "completed": false,
-      "id": "ZiFr0V_"
+      "id": 4
     }
   ]
 }

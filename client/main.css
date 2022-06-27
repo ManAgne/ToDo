@@ -16,7 +16,7 @@ h1 {
 }
 
 .todo-list-container {
-    font-family:Fredoka One;
+    font-family: Fredoka One;
     min-height: 80vh;
     max-width: 100vh;
     padding: 30px;
@@ -105,6 +105,11 @@ h1 {
     color: #e4665a;
 }
 
+.fa-rotate-left {
+    color: #c53431;
+    margin-right: 8px;
+}
+
 .side-image {
     width: 200px;
     position: absolute;
@@ -118,8 +123,8 @@ h1 {
     color: #929292;
 }
 
-.checkedIcon {
-    color: grey;
+.display-none {
+    display: none;
 }
 
 @media (min-width: 644px) {
@@ -153,5 +158,6 @@ h1 {
 
     .new-todo-item {
         width: 200px;
+        margin-top: -60px;
     }
 }

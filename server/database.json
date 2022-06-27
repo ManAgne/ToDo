@@ -2,7 +2,7 @@
   "todos": [
     {
       "title": "Finish that book",
-      "completed": false,
+      "completed": true,
       "id": 1
     },
     {
@@ -11,9 +11,19 @@
       "id": 2
     },
     {
-      "title": "WWWWW WWWWW WWWWW WWWWW",
+      "title": "Go for a mental health walk",
       "completed": false,
-      "id": 12
+      "id": 3
+    },
+    {
+      "title": "Cook mofongo",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "title": "Water my only plant - thyme named Rozaura",
+      "completed": false,
+      "id": 5
     }
   ]
 }
