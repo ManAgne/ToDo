@@ -11,7 +11,7 @@ To install dependencies open CLI, and run command:
 ```
 
 ## Project initialization
-Lounch server:
+Launch server:
 ```
   $ npm start
 ```
